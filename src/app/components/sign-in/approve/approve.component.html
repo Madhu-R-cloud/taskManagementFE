@@ -1,0 +1,25 @@
+
+<!-- <div>
+    <h3>New SignedUp Users</h3>
+    <mat-icon>cancel</mat-icon>
+</div> -->
+
+<div class="container-fluied">
+    <div class="row" id="sect2">
+        <mat-icon class="cancle" (click)="cancle()">cancel</mat-icon><br>
+        <h1 align="center"><b>New SignedUp Users</b></h1>
+    </div>    
+ </div>
+<div>
+    <table id="customers" align="center">
+       <tbody *ngFor="let item of newUsers; let i=index;">
+        <tr>
+          <td><h2>{{item?.userName}}</h2></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <td> <button class="button button4" (click)="approve(item?.userName,$event.target,'Approved')">Approve</button></td>
+          <td> <button class="button button5" (click)="denied(item?.userName,$event.target,'Declined')">Decline</button></td>
+     </tr>
+     </tbody> 
+    
+
+      </table>
+</div>

@@ -1,0 +1,61 @@
+
+<div class="container" id="sect2">
+    <br>
+    <form  [formGroup]="insertEmpForm"  class="form1">
+        <div class="formAline">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label class="font">ParentCrn</mat-label>
+            <input matInput class="icondate" formControlName="parentCrn" required>
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Crn</mat-label>
+            <input matInput class="icondate" formControlName="Crn">
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">FromTime</mat-label>
+            <input matInput type="time" formControlName="fromTime" required>
+          </mat-form-field><br>
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">ToTime</mat-label>
+            <input matInput type="time" formControlName="toTime" required>
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field appearance="outline">
+            <mat-label>{{getdata.status}}</mat-label>
+            <select matNativeControl formControlName="status" name="Select Employees" class="selectname" required>
+              <option value="" selected></option>
+              <option value="ToDo">ToDo</option>
+              <option value="Assigned">Assigned</option>
+              <option value="Assigned">Inprogress</option>
+              <option value="Cancled">Cancled</option>
+              <option value="DevDone">DevDone</option>
+              <option value="OnHold">OnHold</option>
+              <option value="Testing">Testing</option>
+              <option value="Done">Done</option>
+            </select>
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Comment</mat-label>
+            <input matInput formControlName="comment" class="icondate">
+          </mat-form-field><br>
+          <!-- <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">UserName</mat-label>
+            <input matInput formControlName="userName" >
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Date</mat-label>
+            <input matInput type="date" formControlName="date" class="icondate" required>
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Description</mat-label>
+            <textarea matInput formControlName="description" class="icondate" required></textarea>
+          </mat-form-field>
+        </div>
+        <div align="center" class="buttonadd">
+    
+        <button class="button button4" (click)="empEdit()">Update</button>
+        <button class="button button5" (click)="cancle()">cancel</button>
+
+      </div>
+      </form>
+      {{val}}
+     </div>

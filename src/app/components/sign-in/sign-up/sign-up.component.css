@@ -1,0 +1,78 @@
+.second{
+    padding-left: 135px;
+    padding-top: 63px;
+}
+.image{
+    
+    height: 100px;
+    width: 100px;
+}
+.button4{
+ 
+    background-color: #1b3e49;
+    color:  white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    margin: 4px 2px;
+    
+}
+.button5{
+ 
+    background-color: #92917e;
+    color:  white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    margin: 4px 2px;
+    
+}
+h3{
+    color:#1b3e49;
+    font-size: 30px;
+}
+#sect1 {  
+    height: 830px;  
+    /* color: #fff; */
+    background-color:  #e3e7a0;
+
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/253/638/452/light-background-hd-wallpaper-thumb.jpg");   */
+    background-size: 100% ;  
+    background-size: cover;  
+} 
+p{
+    color: white;
+}
+a{
+    color: #ffee00;
+}
+.title{
+    color:  #1b3e49 ;
+    font-size: 60px;
+}
+.titlealign{
+    padding-left: 170px;
+    padding-top: 200px;
+}
+.font{
+    font-size: 18px;
+
+}
+.spanfont{
+    font-size: 14px;
+
+}
+.user{
+
+    color:red;
+}

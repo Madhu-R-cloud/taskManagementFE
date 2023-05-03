@@ -1,0 +1,74 @@
+<div class="container" id="sect2">
+    <nav class="navbar">
+        <div class="container col-sm-3">
+            
+            <img src="https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=">
+            <b>
+            <h1>Admin</h1>
+            </b>
+          </div>
+          <div class="container col-sm-8">
+            
+            <b>
+            <h1 class="title">AUGMONT TIMEKEEPER</h1>
+            <div class="Augimg">
+            <img src="https://golduatcustomer.nimapinfotech.com/assets/media/logos/gold-for-all-logo.png">
+          </div>
+            </b>
+          </div>
+
+          <button class="button button4" mat-raised-button routerLink='/sign-in/Admin'>
+            Back
+            </button> 
+           
+ </nav>
+ <form  [formGroup]="insertEmpForm"  class="form1">
+
+ <mat-form-field appearance="outline">
+    <mat-label>Select Employees</mat-label>
+    <select matNativeControl name="states" formControlName="userName" (change)="selectEmployee()" class="selectname">
+      <option   value="">Select Employees</option>
+    <option   value="All">Task of all Employees</option>
+    <option [value]="names.userName"*ngFor="let names of inactivelist ">{{names.userName}}</option>
+    </select>
+  </mat-form-field>
+ 
+</form>
+<div>
+    <h2>Tasks Of Inactive Employees</h2>
+
+      <table id="customers">
+        <thead>
+        <tr>
+          <th>Name</th>  
+          <th>ParentCrn</th>
+          <th>Crn</th>
+          <th>FromTime</th>
+          <th>ToTime</th>
+          <th>Status</th>
+          <th>Comment</th>
+          <th>Date</th>
+          <th>Description</th>
+       </tr>
+        </thead>
+       <tbody *ngFor="let item of empdetails; let item1 of employeeFilter">
+        <tr>
+          <td>{{item?.userName}}</td>
+         <td>{{item?.parentCrn}}</td>
+          <td>{{item?.Crn}}</td>
+          <td>{{item?.fromTime}}</td>
+          <td>{{item?.toTime}}</td>
+          <td>{{item?.status}}</td>
+          <td>{{item?.comment}}</td>
+          <td>{{item?.date}}</td>
+          <td>{{item?.description}}</td>
+          <!-- <td><i class="material-icons" (click)="editCreate(item?.did)">edit</i></td>
+          <td><i class="material-icons" (click)="deleteTask(item?.did)">delete</i></td> -->
+
+     </tr>
+     </tbody> 
+    
+
+      </table>
+                    
+    </div>

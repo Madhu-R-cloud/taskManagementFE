@@ -1,0 +1,83 @@
+<div class="signIn" id="sect1">
+    <div class="login" align="center">
+    <br><br>
+    <div>
+    <h3>SIGN UP</h3>
+    <br>
+    <img src="https://goldmine.augmont.com/assets/media/logos/header-logo.png" class="image">
+    </div>
+    <br>
+    <div class="signinForm">
+        <form [formGroup]="signinForm" class="form1">
+        <mat-form-field class="example-full-width">
+            <mat-label class="font">Enter FirstName</mat-label>
+            <input type="text" matInput formControlName="firstName"  required>
+            <div *ngIf="signinForm.controls['firstName'].touched && signinForm.controls['firstName'].invalid">
+           
+            </div>
+          </mat-form-field> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width">
+            <mat-label class="font">Enter LastName</mat-label>
+            <input matInput type="text"  formControlName="lastName" required>
+            <div *ngIf="signinForm.controls['lastName'].touched && signinForm.controls['lastName'].invalid">
+                 
+            </div>
+          </mat-form-field>        <br><br><br>
+          <mat-form-field class="example-full-width">
+            <mat-label class="font"> Enter Email</mat-label>
+            <input matInput type="email" formControlName="email"  required>
+            <div *ngIf="signinForm.controls['email'].touched && signinForm.controls['email'].invalid">
+              
+            </div>
+          </mat-form-field> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width">
+            <mat-label class="font"> Enter Designation</mat-label>
+            <input type="text" matInput formControlName="designation" required>
+            <div *ngIf="signinForm.controls['designation'].touched && signinForm.controls['designation'].invalid">
+             
+            </div>
+          </mat-form-field>
+        <br><br><br>
+        <mat-form-field class="example-full-width">
+            <mat-label class="font">Enter UserName</mat-label>
+            <input matInput type="text"  formControlName="userName"  required>
+            <div *ngIf="signinForm.controls['userName'].touched && signinForm.controls['userName'].invalid">
+                
+            </div>
+          </mat-form-field> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width">
+            <mat-label class="font">Enter Password</mat-label>
+            <input matInput type="password"  formControlName="password" required>
+            <div *ngIf="signinForm.controls['password'].touched && signinForm.controls['password'].invalid">
+               
+            </div>
+          </mat-form-field>
+        <br><br><br>
+        <mat-form-field class="example-full-width">
+            <mat-label class="font">Enter Mobile Number</mat-label>
+            <input matInput  formControlName="mobileNumber"  maxlength="10" minlength="10" required>
+            <div *ngIf="signinForm.controls['mobileNumber'].touched && signinForm.controls['mobileNumber'].invalid">
+               
+            </div>
+          </mat-form-field> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- <button class="button button4">Genarate OTP</button><br><br> -->
+          
+          <mat-form-field class="example-full-width">
+            <mat-label class="font OTP">Enter Otp</mat-label>
+            <input type="password" matInput formControlName="otp" required>
+            <div *ngIf="signinForm.controls['otp'].touched && signinForm.controls['otp'].invalid">
+               
+            </div>
+          </mat-form-field>
+        </form>
+        <p class="user">{{val}}</p>
+        <br><br><br>
+        <button class="button button4" (click)="signUp()">SignUp</button>
+        <button class="button button5" (click)="cancle()">Cancel</button>
+
+        <br><br>
+        
+    </div>
+    </div>
+</div>

@@ -1,0 +1,161 @@
+#sect2 {  
+
+    width: 970px;
+    /* color: #fff; */
+    background-image: url("https://media.istockphoto.com/id/1320330190/photo/card-cardboard-paper-background-seamless-white-tileable-texture.jpg?b=1&s=170667a&w=0&k=20&c=wMW61TkpxGducRbkHWyYAoDCc-6cxLjcNVknAzqJePI=");  
+    background-size: 100% ;  
+    background-size: cover;  
+} 
+
+.navbar img{
+
+    width: 200px;
+    padding-left: 4%;
+    padding-top: 3%;
+    
+
+    
+}
+
+
+.navbar{
+
+    background-color: #1b3e49;
+}
+
+
+
+
+
+
+.second img{
+
+    width: 470px;
+    padding-left: 70%;
+   
+    
+}
+
+
+.name{
+    padding-top: 3%;
+    padding-right: 10%;
+
+}
+
+h1{
+    padding-left: 60px;
+    color: #ffffff;
+}
+
+.title {
+    font-size: 45px;
+    padding-top: 40px;
+    padding-left: 70px;
+    
+}
+.Augimg img{
+
+    width: 450px;
+    padding-left: 20%;
+}
+
+.formAline{
+
+    padding-left: 10%;
+}
+
+.mat-mdc-table {
+    width: 1000%;
+    max-height: 500px;
+    overflow: auto;
+  }
+  
+  .mat-column-name {
+    height: 100px;
+  }
+  .font{
+    font-size: 18px;
+
+}
+.button4{
+ 
+    background-color: #c0b411;
+    color:  white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    margin: 4px 2px;
+    
+}
+.button5{
+ 
+    background-color: #92917e;
+    color:  white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    margin: 4px 2px;
+    
+}
+
+.buttonadd{
+    padding-bottom: 5%;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.material-icons{
+
+    cursor: pointer;
+}
+.icon{
+font-size: 22px;
+}
+.icondate{
+    font-size: 18px;
+}
+.select{
+    font-size: 200%;
+    background-image: url("https://media.istockphoto.com/id/1320330190/photo/card-cardboard-paper-background-seamless-white-tileable-texture.jpg?b=1&s=170667a&w=0&k=20&c=wMW61TkpxGducRbkHWyYAoDCc-6cxLjcNVknAzqJePI=");  
+}
+.option{
+    font-size: 18px;
+}
+.selectname{
+    font-size: 18px;
+}
+.errmsg{
+    color: red;
+}

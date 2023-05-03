@@ -1,0 +1,97 @@
+.products{
+
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    border: 2px solid  #1b3e49;
+    border-radius: 25px;
+    padding-bottom: 250px;
+
+    
+}
+
+#sect1 {  
+    height: 500px;  
+    /* color: #fff; */
+    background-color:  #1b3e49;
+
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/253/638/452/light-background-hd-wallpaper-thumb.jpg");   */
+    background-size: 100% ;  
+    background-size: cover;  
+} 
+#sect2 {  
+    height: 640px;  
+    /* color: #fff; */
+    background-image: url("https://media.istockphoto.com/id/1320330190/photo/card-cardboard-paper-background-seamless-white-tileable-texture.jpg?b=1&s=170667a&w=0&k=20&c=wMW61TkpxGducRbkHWyYAoDCc-6cxLjcNVknAzqJePI=");  
+    background-size: 100% ;  
+    background-size: cover;  
+} 
+.signIn{
+    
+    width: 400px;
+    height: 500px;
+    border: 2px solid  #1b3e49;   
+    border-radius: 25px;
+}
+h3{
+    color: #f1f4f5;
+    font-size: 30px;
+}
+.second{
+    padding-left: 135px;
+    padding-top: 63px;
+}
+.image{
+    
+    height: 100px;
+    width: 100px;
+}
+.button4{
+ 
+    background-color: rgb(196, 169, 19);
+    color:  #1b3e49;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    margin: 4px 2px;
+    
+}
+p{
+    color: white;
+}
+a{
+    color: #ffee00;
+}
+.title{
+    color:  #1b3e49 ;
+    font-size: 60px;
+}
+.title2{
+    color:  #1b3e49 ;
+
+    font-size: 20px;
+}
+.titlealign{
+    padding-left: 170px;
+    padding-top: 200px;
+}
+.signinForm input{
+    font-size: 18px;
+}
+.user{
+
+    color:red;
+}
+
+.form1 input{
+    border-color: #f3e51d;
+    border-width: 5%;
+}
+.errmsg{
+    color: red;
+}

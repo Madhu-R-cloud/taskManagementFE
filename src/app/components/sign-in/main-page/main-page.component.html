@@ -1,0 +1,117 @@
+
+<div class="container" id="sect2">
+    <nav class="navbar">
+        <div class="container col-sm-3">
+            
+            <img src="https://media.istockphoto.com/id/1332100919/vector/man-icon-black-icon-person-symbol.jpg?s=612x612&w=0&k=20&c=AVVJkvxQQCuBhawHrUhDRTCeNQ3Jgt0K1tXjJsFy1eg=">
+            <b>
+            <h1 *ngIf = "userLoginName != undefined">{{userLoginName.userName}}</h1>
+    
+            <!-- <h1 *ngIf = "name != undefined">{{name.userName}}</h1>  -->
+            </b>
+          </div>
+          <div class="container col-sm-8">
+            
+            <b>
+            <h1 class="title">AUGMONT TIMEKEEPER</h1>
+            <div class="Augimg">
+            <img src="https://golduatcustomer.nimapinfotech.com/assets/media/logos/gold-for-all-logo.png">
+          </div>
+            </b>
+          </div>
+          <button class="button button4" routerLink='/'>Logout</button>
+    
+      </nav>
+      <!-- <form  [formGroup]="insertEmpForm"  class="form1">
+        <div class="formAline">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label class="font">ParentCrn</mat-label>
+            <input matInput formControlName="parentCrn">
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Crn</mat-label>
+            <input matInput formControlName="Crn" >
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">FromTime</mat-label>
+            <input matInput type="time" formControlName="fromTime">
+          </mat-form-field><br>
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">ToTime</mat-label>
+            <input matInput type="time" formControlName="toTime">
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Status</mat-label>
+            <input matInput formControlName="status"  >
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Comment</mat-label>
+            <input matInput formControlName="comment"  >
+          </mat-form-field><br>
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">MobileNumber</mat-label>
+            <input matInput formControlName="mobileNumber" >
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Date</mat-label>
+            <input matInput type="date" formControlName="date" >
+          </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-form-field class="example-full-width"  appearance="outline">
+            <mat-label  class="font">Description</mat-label>
+            <textarea matInput formControlName="description"  ></textarea>
+          </mat-form-field>
+        </div>
+        <div align="center" class="buttonadd">
+        <button class="button button4" (click)="empInsert()" >Submit</button>
+        <button class="button button4" >Update</button>
+      </div>
+      </form> -->
+      <button class="button button5" (click)="downloadXl()">Download Task To XL</button>
+      <button class="button button4" (click)="create()" >Add Your Task</button>
+      <br><br>
+
+      <div class="search">
+        <div class="row">
+          <div class="search-hero">
+            <input class="form-control" type="search" name="search" width="60" height="10" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442; Enter To Search for Status,FromTime,ToTime,date...">
+          </div>
+        </div>
+      </div>
+
+      <h2>Your Task Details</h2> 
+        <table id="customers">
+          <thead>
+          <tr>
+            <th>ParentCrn</th>
+            <th>Crn</th>
+            <th>FromTime</th>
+            <th>ToTime</th>
+            <th>Status</th>
+            <th>Comment</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+         </tr>
+          </thead>
+          <tbody *ngFor="let item of det | filter : searchText; let i=index;">
+          <tr>
+            <td>{{item?.parentCrn}}</td>
+            <td>{{item?.Crn}}</td>
+            <td>{{item?.fromTime}}</td>
+            <td>{{item?.toTime}}</td>
+            <td>{{item?.status}}</td>
+            <td>{{item?.comment}}</td>
+            <td>{{item?.date}}</td>
+            <td>{{item?.description}}</td>
+            <td><i class="material-icons" (click)="editCreate(item?.did)">edit</i></td>
+            <td><i class="material-icons" (click)="deleteTask(item?.did)">delete</i></td>
+       </tr>
+       </tbody>
+      
+          <tr>
+          </tr>
+        </table>
+      
+                    
+    </div>

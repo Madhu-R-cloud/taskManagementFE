@@ -1,0 +1,56 @@
+<div class="container-fluied">
+    <div class="row" id="sect2">
+
+      <div class="col-sm-6 first">
+        <div class="titlealign">
+            <h1 class="title">AUGMONT</h1>
+            <h1 class="title">TIMEKEEPER</h1>
+            <br><br>
+            <p class="title2">Empower Your Team with Efficient Work Tracking.</p>
+                <li>"Streamline Your Workforce with Accurate Time Management."</li>
+                <li>"Maximize Productivity with Easy Employee Tracking."</li>
+                <li>"Stay on Top of Your Team's Performance with One Click."</li>
+
+        </div>
+ </div>
+ <div class="col-sm-6 second">
+    <div class="signIn" id="sect1">
+        <div class="login" align="center">
+        <br><br>
+        <div>
+        <h3>LOG IN</h3>
+        <br>
+        <img src="https://goldmine.augmont.com/assets/media/logos/header-logo.png" class="image">
+        </div>
+        <br><br>
+        <div class="signinForm">
+            <form [formGroup]="signinForm" class="form1">
+                <div>
+            <input type="text" placeholder="Enter your Username" formControlName="username" required>
+            <div *ngIf="signinForm.controls['username'].touched && signinForm.controls['username'].invalid">
+            <span class="errmsg">UserName Required</span>
+            </div> 
+        </div>
+        <br>
+        <div>
+        <input type="password" placeholder="Enter your Password" formControlName="password" required>
+             <div *ngIf="signinForm.controls['password'].touched && signinForm.controls['password'].invalid">
+           <span  class="errmsg">Password Required</span>
+            </div> 
+        </div>
+        <br>
+        <p class="user">{{user}}</p>
+            <br>
+            <a  class="button button4" (click)="loginSuccess()">Login</a>
+           
+            </form>
+        </div>
+            <br>
+            <p>create new user ?<a (click)="openDialog()">Signup</a></p>
+            <p><a (click) = "resetPassword()">Forgot Password?</a ></p>
+
+        </div>
+        </div>
+   </div>
+</div>
+</div>
